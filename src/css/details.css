@@ -1,0 +1,666 @@
+.head_nav {
+  background-color: #7e0001;
+}
+
+.head_nav .nav_l h3 {
+  background-color: #624b40;
+}
+
+.head_nav .nav_l ul {
+  display: none;
+}
+
+body {
+  background: #fbfaf9;
+}
+
+#main .crumb {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #666;
+  height: 18px;
+  line-height: 18px;
+}
+
+#main .crumb a {
+  color: #666;
+  font-size: 12px;
+}
+
+#main .crumb strong {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#main .promotion {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#main .promotion .promotionPic {
+  float: left;
+  width: 380px;
+}
+
+#main .promotion .promotionPic .picture {
+  float: left;
+  width: 380px;
+  height: 440px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #ccc;
+  cursor: crosshair;
+}
+
+#main .promotion .promotionPic .picture img {
+  width: 380px;
+  height: 440px;
+}
+
+#main .promotion .promotionPic .catalog {
+  position: relative;
+  float: left;
+  margin: 10px 0 20px;
+  width: 380px;
+  height: 70px;
+}
+
+#main .promotion .promotionPic .catalog .imgbox {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 310px;
+  height: 70px;
+}
+
+#main .promotion .promotionPic .catalog .imgbox ul {
+  float: left;
+  width: 20000em;
+  height: 70px;
+}
+
+#main .promotion .promotionPic .catalog .imgbox ul li {
+  float: left;
+  margin-right: 10px;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #e6e1db;
+  background: #fff;
+  cursor: pointer;
+}
+
+#main .promotion .promotionPic .catalog .imgbox ul li img {
+  display: block;
+  margin: 1px auto;
+  width: 40px;
+  height: 65px;
+}
+
+#main .promotion .promotionPic .catalog a {
+  display: block;
+  width: 15px;
+  height: 50px;
+  background: url(../img/icon.jpg) no-repeat;
+  cursor: no-drop;
+  position: absolute;
+}
+
+#main .promotion .promotionPic .catalog .aUp {
+  top: 10px;
+  left: 10px;
+  background-position: -78px -30px;
+}
+
+#main .promotion .promotionPic .catalog .aDown {
+  top: 10px;
+  right: 10px;
+  background-position: -93px -30px;
+}
+
+#main .promotion .promotionPic .num_id {
+  float: left;
+  padding: 0 0 15px 75px;
+  width: 305px;
+  height: 30px;
+  color: #937966;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+#main .promotion .promotionPic .num_id n_id {
+  margin: 0 10px 0 5px;
+}
+
+#main .promotion .promotionPic .share {
+  float: left;
+  padding: 0 0 0 60px;
+  width: 320px;
+}
+
+#main .promotion .promotionPic .share button {
+  float: left;
+  padding-left: 28px;
+  width: 73px;
+  height: 27px;
+  background: url(../img/icon.jpg) -108px -30px no-repeat;
+  color: #666;
+  font-size: 12px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+#main .promotion .promotionMiddle {
+  margin-left: 450px;
+  width: 560px;
+}
+
+#main .promotion .promotionMiddle .introduce {
+  position: relative;
+  z-index: 99;
+  margin-bottom: 20px;
+  width: 560px;
+  border-bottom: 1px solid #e6e1db;
+}
+
+#main .promotion .promotionMiddle .introduce h2 {
+  font-size: 16px;
+  line-height: 20px;
+  height: 36px;
+  color: #000;
+  font-weight: bold;
+}
+
+#main .promotion .promotionMiddle .introduce .grade ul {
+  margin-top: 10px;
+  height: 44px;
+}
+
+#main .promotion .promotionMiddle .introduce .grade ul li {
+  float: left;
+  width: 210px;
+  font-size: 12px;
+}
+
+#main .promotion .promotionMiddle .introduce .grade ul li span {
+  width: 90px;
+  color: #999;
+  line-height: 20px;
+  margin-right: 25px;
+}
+
+#main .promotion .promotionMiddle .introduce .grade ul li a {
+  padding-left: 5px;
+  color: #09c;
+}
+
+#main .promotion .promotionMiddle .introduce .grade ul li:nth-child(2) {
+  width: 300px;
+}
+
+#main .promotion .promotionMiddle .news {
+  height: 50px;
+  position: relative;
+}
+
+#main .promotion .promotionMiddle .news dl {
+  z-index: 10;
+  padding: 5px 0;
+  height: 18px;
+}
+
+#main .promotion .promotionMiddle .news dl dt {
+  float: left;
+  width: 70px;
+  height: 18px;
+  color: #999;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+#main .promotion .promotionMiddle .news dl dd {
+  overflow: hidden;
+  margin-left: 5px;
+  float: left;
+  height: 18px;
+  color: #957a67;
+  line-height: 18px;
+}
+
+#main .promotion .promotionMiddle .news dl dd i {
+  display: inline-block;
+  width: 60px;
+  height: 18px;
+  text-align: center;
+  background: #d73c3c;
+  color: #fff;
+  font-weight: normal;
+  vertical-align: top;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#main .promotion .promotionMiddle .news dl dd p {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#main .promotion .promotionMiddle .news dl span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  padding-right: 15px;
+  color: #09c;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#main .promotion .promotionMiddle .news dl span i {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  display: inline-block;
+  padding: 0;
+  width: 0;
+  height: 0;
+  border: 6px solid #fbfaf9;
+  border-top-color: #09c;
+}
+
+#main .promotion .promotionMiddle .explain {
+  height: 56px;
+}
+
+#main .promotion .promotionMiddle .explain p {
+  color: #999;
+  line-height: 36px;
+  font-size: 12px;
+}
+
+#main .promotion .promotionMiddle .explain p span {
+  color: #c00;
+  margin: 0 2px;
+}
+
+#main .promotion .promotionMiddle .explain p .price {
+  font-size: 36px;
+}
+
+#main .promotion .promotionMiddle .write {
+  z-index: 8;
+  padding: 20px;
+  width: 560px;
+  height: auto;
+  border: 1px dashed #fec083;
+  background: #ffffe8;
+}
+
+#main .promotion .promotionMiddle .write ul {
+  position: relative;
+}
+
+#main .promotion .promotionMiddle .write ul .amount {
+  display: block;
+  padding: 3px 0;
+  height: auto;
+  line-height: 26px;
+  overflow: hidden;
+}
+
+#main .promotion .promotionMiddle .write ul .amount span {
+  width: 70px;
+  font-size: 14px;
+  float: left;
+}
+
+#main .promotion .promotionMiddle .write ul .amount button {
+  overflow: hidden;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon.jpg) no-repeat;
+  float: left;
+}
+
+#main .promotion .promotionMiddle .write ul .amount .sub {
+  background-position: 0 -232px;
+}
+
+#main .promotion .promotionMiddle .write ul .amount .num {
+  margin-top: 3px;
+  padding: 0 3px;
+  width: 35px;
+  height: 20px;
+  border: 1px solid #e6e1db;
+  text-align: center;
+  line-height: 20px;
+  float: left;
+}
+
+#main .promotion .promotionMiddle .write ul .amount .add {
+  background-position: -16px -232px;
+  margin-left: 5px;
+}
+
+#main .promotion .promotionMiddle .write ul li:last-child {
+  margin-top: 10px;
+  height: 44px;
+  padding: 3px 0;
+}
+
+#main .promotion .promotionMiddle .write ul li:last-child .addcar {
+  margin-right: 10px;
+  width: 210px;
+  height: 44px;
+  background: url(../img/icon.jpg) 0 -890px no-repeat;
+  cursor: pointer;
+}
+
+#main .promotion .promotionMiddle .txt {
+  margin-top: 15px;
+  padding-left: 15px;
+  color: #957a67;
+  font-size: 12px;
+}
+
+#main .promotion .promotionMiddle .txt p {
+  text-indent: 3em;
+}
+
+#offside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #7e0001;
+  z-index: 999;
+  width: 34px;
+  height: 100%;
+  color: #fff;
+}
+
+#offside .tab {
+  position: absolute;
+  padding: 7px;
+  width: 34px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+#offside i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/nBar.png) no-repeat;
+}
+
+#offside .off_user {
+  border-bottom: 1px solid #8b1a1b;
+  top: 173.7px;
+}
+
+#offside .off_user span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/nBar.png) 2px 0 no-repeat;
+}
+
+#offside .off_car {
+  border-bottom: 1px solid #8b1a1b;
+  color: #fff;
+  top: 213.7px;
+}
+
+#offside .off_car b {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/nBar.png) -20px 1px no-repeat;
+}
+
+#offside .off_car span {
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 12px;
+  width: 20px;
+}
+
+#offside .off_car i {
+  margin: 9px 0;
+  background: #f46b0a;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: block;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #FFF;
+}
+
+#offside .off_car:hover {
+  background: #000;
+}
+
+#offside .off_car .look {
+  position: absolute;
+  right: 34px;
+  z-index: 999;
+  display: block;
+  height: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 0 2px #ccc;
+  top: 0;
+  display: none;
+}
+
+#offside .off_car .look .icon {
+  position: absolute;
+  right: -8px;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  width: 16px;
+  margin-top: -8px;
+}
+
+#offside .off_car .look .loog_list {
+  width: 360px;
+  cursor: pointer;
+}
+
+#offside .off_car .look .loog_list h2 {
+  background: #f5f3f1;
+  height: 55px;
+  line-height: 30px;
+  vertical-align: middle;
+  border-bottom: 1px #e6e1db;
+  font-size: 14px;
+  padding: 15px 15px 10px 15px;
+  color: #666;
+  display: none;
+}
+
+#offside .off_car .look .loog_list .emqty {
+  width: 360px;
+  color: #666;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+#offside .off_car .look .loog_list ul {
+  padding: 0 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#offside .off_car .look .loog_list ul li {
+  position: relative;
+  border-top: 1px dashed #ddd;
+  height: 108px;
+  line-height: 20px;
+  padding: 20px 40px 20px 80px;
+}
+
+#offside .off_car .look .loog_list ul li a {
+  color: #5b473d;
+  display: block;
+}
+
+#offside .off_car .look .loog_list ul li a img {
+  height: 98px;
+  left: 10px;
+  position: absolute;
+  top: 5px;
+  width: 60px;
+}
+
+#offside .off_car .look .loog_list ul li a span {
+  font-size: 12px;
+  width: auto;
+  text-align: left;
+}
+
+#offside .off_car .look .loog_list ul li a .name {
+  color: #5b473d;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#offside .off_car .look .loog_list ul li a .nameEn {
+  color: #85726c;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#offside .off_car .look .loog_list ul li a .price {
+  color: #85726c;
+  padding-top: 10px;
+}
+
+#offside .off_car .look .loog_list ul li a .price strong {
+  color: #c53f4c;
+  font-family: Arial;
+}
+
+#offside .off_car .look .loog_list ul li .btn-remove {
+  display: block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  color: #000;
+}
+
+#offside .off_car .look .loog_list .checkcar {
+  background-color: #ede9e7;
+  height: 58px;
+  padding: 15px;
+  font-size: 12px;
+  display: none;
+}
+
+#offside .off_car .look .loog_list .checkcar p {
+  color: #5a463d;
+  font-family: Arial;
+  line-height: 24px;
+  padding-top: 3px;
+  float: left;
+}
+
+#offside .off_car .look .loog_list .checkcar p .c_qty {
+  color: #c53f4c;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 1px;
+  display: inline-block;
+}
+
+#offside .off_car .look .loog_list .checkcar a {
+  float: right;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding: 3px 25px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  background: #bb0f2e;
+  color: #fff;
+}
+
+#offside .off_car:hover .look {
+  display: block;
+}
+
+#offside .property {
+  background: #650001;
+  top: 333.7px;
+}
+
+#offside .property i {
+  background-position: -40px 0;
+}
+
+#offside .recharge {
+  background: #650001;
+  top: 368.7px;
+}
+
+#offside .recharge i {
+  background-position: -60px 0;
+}
+
+#offside .service {
+  top: 403.7px;
+  background: #650001;
+}
+
+#offside .service i {
+  background-position: -160px 0;
+}
+
+#offside .valid {
+  top: 438.7px;
+  background: #650001;
+}
+
+#offside .valid i {
+  background-position: -140px 0;
+}
+
+#offside .qrcode {
+  bottom: 50px;
+}
+
+#offside .qrcode i {
+  background-position: -100px 0;
+}
+
+#offside .backTop {
+  bottom: 16px;
+}
+
+#offside .backTop i {
+  background-position: -120px 0;
+}

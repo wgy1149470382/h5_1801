@@ -1,0 +1,17 @@
+require.config({
+    paths:{
+        'jquery':'../lib/jquery-3.2.1',
+        'carousel':'../lib/jquery-xcarousel/jquery.xCarousel',
+        'scarousel':'../lib/jQuery.carousel/jQuery.scarousel',
+        'common':'../js/common',
+        'Zoom':'../lib/jquery.wgyZoom/jquery.wgyZoom',
+        'autoCar':'../js/autoCar'
+    },
+    shim:{
+        'carousel':['jquery'],
+        'scarousel':['jquery'],
+        'common':['jquery'],
+        'Zoom':['jquery'],
+        'autoCar':['jquery']
+    }
+});
