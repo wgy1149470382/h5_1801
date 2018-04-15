@@ -5,13 +5,15 @@ require.config({
         'scarousel':'../lib/jQuery.carousel/jQuery.scarousel',
         'common':'../js/common',
         'Zoom':'../lib/jquery.wgyZoom/jquery.wgyZoom',
-        'autoCar':'../js/autoCar'
+        'autoCar':'../js/autoCar',
+        'autoAjax':'../js/autoajax'
     },
     shim:{
         'carousel':['jquery'],
         'scarousel':['jquery'],
         'common':['jquery'],
         'Zoom':['jquery'],
-        'autoCar':['jquery']
+        'autoCar':['jquery'],
+        'autoAjax':['jquery']
     }
 });

@@ -1,0 +1,274 @@
+.nav_l ul {
+  display: none;
+}
+
+.goodNavigator {
+  background-color: #fff;
+  border: solid 1px #DDDBD2;
+  border-top: solid 2px #C63F4E;
+  padding: 15px 0;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.goodNavigator .first {
+  height: 28px;
+  float: left;
+  margin-left: 10px;
+  display: inline;
+}
+
+.goodNavigator .first li {
+  height: 28px;
+  float: left;
+  margin-right: 5px;
+}
+
+.goodNavigator .first li a {
+  background: #fff;
+  width: auto;
+  padding: 0 18px 0 16px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #E6E1DB;
+  color: #333;
+  font-size: 12px;
+}
+
+.goodNavigator .first li:hover a {
+  background: #c63f4e;
+  border-color: #c63f4e;
+  color: #fff;
+}
+
+.goodNavigator .goodspage {
+  float: right;
+  padding: 0 14px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.goodNavigator .goodspage label {
+  float: left;
+  color: #333;
+  margin-right: 10px;
+}
+
+.goodNavigator .goodspage button {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 28px;
+  border: solid 1px #AA998A;
+  text-indent: -10000px;
+  overflow: hidden;
+  margin-left: 5px;
+  background: #fff;
+}
+
+.goodNavigator .pageview {
+  float: right;
+  height: 32px;
+  margin: 0 13px 0 0;
+}
+
+.goodNavigator .pageview li {
+  width: 60px;
+  height: 32px;
+  margin: 0;
+  float: left;
+}
+
+.goodNavigator .pageview li a {
+  width: 60px;
+  text-indent: 10px;
+  text-align: left;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 15px;
+  background: url(../img/view.png) no-repeat left -84px;
+  font-size: 12px;
+}
+
+.goodNavigator .pageview li:first-child a {
+  background-position: left -148px;
+}
+
+.goodNavigator .pageview li:last-child a {
+  background-position: right -84px;
+}
+
+.goodNavigator .areaSelector {
+  float: right;
+  margin-right: 10px;
+  z-index: 200;
+}
+
+.goodNavigator .areaSelector input {
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+}
+
+.goodNavigator .source {
+  margin-right: 5px;
+  float: right;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.goodNavigator .source input {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.goodlist {
+  position: relative;
+}
+
+.goodlist ul {
+  width: 100%;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.goodlist ul li {
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  height: 450px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.goodlist ul li dl {
+  background-color: #fff;
+  position: relative;
+  border: 3px solid #DDDBD2;
+  width: 184px;
+}
+
+.goodlist ul li dl dt {
+  position: relative;
+  height: 236px;
+}
+
+.goodlist ul li dl dt a {
+  width: 110px;
+  height: 180px;
+  display: block;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.goodlist ul li dl dt a img {
+  width: 110px;
+  height: 180px;
+  display: block;
+}
+
+.goodlist ul li dl .base {
+  background-color: #F8F8F5;
+  padding: 10px 8px;
+}
+
+.goodlist ul li dl .base a {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  color: #333;
+  font-size: 14px;
+}
+
+.goodlist ul li dl .base a span {
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  color: #444;
+  font-size: 12px;
+}
+
+.goodlist ul li dl .base .price {
+  line-height: 32px;
+  height: 32px;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 22px;
+  color: #CC0000;
+}
+
+.goodlist ul li dl .action {
+  text-align: center;
+  background-color: #FAFAFA;
+  display: block;
+}
+
+.goodlist ul li dl .action p {
+  padding: 8px 0;
+}
+
+.goodlist ul li dl .action p a {
+  margin: 0 auto;
+  background: #dd3939;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  width: 170px;
+}
+
+.goodlist ul li dl .sum {
+  height: 44px;
+  border-top: solid 1px #EFEFEF;
+  color: #666;
+}
+
+.goodlist ul li dl .sum span {
+  float: left;
+  width: 59px;
+  padding: 4px 0;
+  height: 36px;
+  line-height: 18px;
+  text-align: center;
+  border-right: 1px solid #EFEFEF;
+  font-size: 12px;
+}
+
+.goodlist ul li dl .sum span strong {
+  color: #CC0000;
+  font-size: 12px;
+  display: block;
+}
+
+.page {
+  height: 60px;
+  position: relative;
+  right: 0;
+  width: 100%;
+}
+
+.page span {
+  display: inline-block;
+  margin: 5px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #dfdfdf;
+  color: #666;
+}
+
+.page .light {
+  background: #dd3939;
+  color: #fff;
+}

@@ -1,61 +1,66 @@
 require(['config'],function(){
-    require(['jquery','Zoom','autoCar'],function($){
+    require(['jquery','Zoom','autoCar','autoAjax'],function($){
+
         //头部
         $('#pageHeader').load('../html/header.html',function(){
-            
+            $('#offside').load('../html/offside.html',function(){
+            var $off_car = $('.off_car');
             //数据输出
-        $('.addcar').click(function(){
-            // console.log($('.name').html())
-            // console.log($('.simg').attr('src'))
-            // console.log($num.val())
-            // console.log($('.price').text())
-            // console.log($('.category').html())
+            $('.addcar').click(function(){
+                // console.log($('.name').html())
+                // console.log($('.simg').attr('src'))
+                // console.log($num.val())
+                // console.log($('.price').text())
+                // console.log($('.category').html())
 
-            //飞入购物车
-            var $img = $('.picture').find('img');
-            var $copyImg = $img.clone();
-            $copyImg.css({
-                position:'absolute',
-                left:$img.offset().left,
-                top:$img.offset().top,
-                width:$img.outerWidth()
-            });
+                //飞入购物车
+                var $img = $('.picture').find('img');
+                var $copyImg = $img.clone();
+                $copyImg.css({
+                    position:'absolute',
+                    left:$img.offset().left,
+                    top:$img.offset().top,
+                    width:$img.outerWidth()
+                });
 
-            $copyImg.appendTo($('body'));
-            // $('body').append($copyImg);
+                $copyImg.appendTo($('body'));
+                // $('body').append($copyImg);
 
-            $copyImg.animate({
-                left:$off_car.offset().left,
-                top:$off_car.offset().top,
-                width:20
-            },function(){
-                $copyImg.remove();
+                $copyImg.animate({
+                    left:$off_car.offset().left,
+                    top:$off_car.offset().top,
+                    width:20
+                },function(){
+                    $copyImg.remove();
 
-                $.ajax({
-                    url:'../api/addcar.php',
-                    data:{
-                        id:id,
-                        name:$('.name').html(),
-                        price:$('.price').text(),
-                        qty:$num.val(),
-                        imgs:$('.simg').attr('src'),
-                        category:$('.category').html(),
-                    },
-                        success:function(data){
-                                autoAjax();
-                                autocar();
-                            
-                        }
+                    $.ajax({
+                        url:'../api/addcar.php',
+                        data:{
+                            id:id,
+                            name:$('.name').html(),
+                            price:$('.price').text(),
+                            qty:$num.val(),
+                            imgs:$('.simg').attr('src'),
+                            category:$('.category').html(),
+                        },
+                            success:function(data){
+                                    autoAjax();
+                                    autocar();
+                                
+                            }
+                        
+                    })
                     
                 })
+
                 
             })
-
-            
-        })
+            });
         })
         //底部
-        $('#pageFooter').load('../html/footer.html')
+        $('#pageFooter').load('../html/footer.html');
+
+        var $off_car = $('.off_car');
 
         var id = location.search.slice(4);
         console.log(id)
@@ -107,7 +112,7 @@ require(['config'],function(){
         
         
 
-        var $off_car = $('.off_car');
+        
 
         
 
@@ -118,37 +123,37 @@ require(['config'],function(){
 
         //右侧购物车
         
-        function autoAjax(){
+        // function autoAjax(){
 
-        $.ajax({
-            url:'../api/carlist.php',
-            dataType:'json',
-            success:function(data){console.log(data);
-                $('.emqty').hide();
-                $('.join').show();
-                $('.checkcar').show();
-                $('.sss').html('');
-                var total = 0;
+        //     $.ajax({
+        //     url:'../api/carlist.php',
+        //     dataType:'json',
+        //     success:function(data){console.log(data);
+        //         $('.emqty').hide();
+        //         $('.join').show();
+        //         $('.checkcar').show();
+        //         $('.sss').html('');
+        //         var total = 0;
                 
-                var res = data.map(function(item){
-                   total = total + item.qty*1;
-                    return `<li data-id="${item.id}">
-                            <a href="">
-                            <img src="${item.imgs}">
-                            <span class="name">${item.name}</span>
-                            <span class="nameEn">${item.category}</span>
-                            <span class="price"><strong>${item.price}</strong>X<em>${item.qty}</em></span>
-                            </a>
-                            <div title="从购物车移除${item.name}" class="btn-remove">&times;</div>
-                            </li>`
+        //         var res = data.map(function(item){
+        //            total = total + item.qty*1;
+        //             return `<li data-id="${item.id}">
+        //                     <a href="">
+        //                     <img src="${item.imgs}">
+        //                     <span class="name">${item.name}</span>
+        //                     <span class="nameEn">${item.category}</span>
+        //                     <span class="price"><strong>${item.price}</strong>X<em>${item.qty}</em></span>
+        //                     </a>
+        //                     <div title="从购物车移除${item.name}" class="btn-remove">&times;</div>
+        //                     </li>`
                     
-                })
-                $('.c_qty').html(total);
-                $('.sss').append(res);
-                $('.measure').text(total);
-            }
-        })
-        }
+        //         })
+        //         $('.c_qty').html(total);
+        //         $('.sss').append(res);
+        //         $('.measure').text(total);
+        //     }
+        //     })
+        // }
 
         //切换
         ;(function(){

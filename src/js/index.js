@@ -3,6 +3,14 @@ require(['config'],function(){
         //头部
         $('#pageHeader').load('html/header.html',function(){
             autocar();
+            var a = $('.nav_l').find('ul').find('a');
+
+            a.click(function(e){
+                e.preventDefault();
+
+                location.href = '../html/pagelist.html';
+            })
+
         })
 
         //底部
@@ -32,7 +40,7 @@ require(['config'],function(){
             $page.append($span);
         }
 
-        $page.on('click','span',function(){
+        $page.on('mouseover','span',function(){
             idx = $(this).index()-1;
             auto();
         })
@@ -52,7 +60,7 @@ require(['config'],function(){
                 idx=1;
             }
             var target = -imgwidth*idx;
-            $ul.animate({left:target});
+            $ul.stop().animate({left:target});
             if(idx<len-1){
                 $page.find('span').eq(idx).addClass('circle').siblings('span').removeClass('circle')
             }else{
@@ -229,6 +237,22 @@ require(['config'],function(){
 
         })();
         
+        //返回顶部
+        ;(function(){
+            var $backtop = $('#backtop')
+            $(window).scroll(function(){
+                if($(window).scrollTop()>1666){
+                    $backtop.show();
+                }else{
+                    $backtop.hide();
+                }
+            })
+
+            $backtop.click(function(){
+                $('html , body').animate({scrollTop: 0},500)
+            })
+        })();
+
 
     })
 })

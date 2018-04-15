@@ -75,7 +75,7 @@ body{background:#fff;}
                             }
                         }
                     }
-                    dd{border:2px solid #e5e5e5;padding:10px;height:55px;background:#f4f4f0;height:77px;
+                    dd{border:2px solid #e5e5e5;padding:10px;height:55px;background:#f4f4f0;height:77px;width:185px;
                         a{display:block;overflow:hidden;height:32px;color:#5b473d;line-height:16px;}
                         p{color:#c53f4c;font-size:20px;font-family:Georgia;height:23px;line-height:30px;}
                     }
@@ -83,7 +83,9 @@ body{background:#fff;}
                         span{margin-left:5px;}
                     }
                 }
-                
+                li:hover dl{margin-left:-2px;margin-top:-1px;}
+                li:hover dd{margin-left:-2px;}
+
             }
         }
     }
@@ -393,6 +395,9 @@ body{background:#fff;}
     }
 }
 
+#backtop{position:fixed;right:0;bottom:40%;z-index:1000;background: #7e0001;width:50px;height: 50px;line-height:50px;text-align:center;display:none;
+    span{display:block;width:20px;height: 20px;background: url(../img/nBar.png) -120px 0 no-repeat;margin:15px auto;}
+}
 
 
     

@@ -14,6 +14,7 @@
     $sql7 = "select * from good where category='laojiu2'";
     $sql8 = "select * from good where category='jiuju'";
     $sql9 = "select * from good1";
+    $sql10 = "select * from good where category='jj'";
 
     $wine1 = $conn->query($sql1);
     $wine2 = $conn->query($sql2);
@@ -24,7 +25,7 @@
     $laojiu2 = $conn->query($sql7);
     $jiuju = $conn->query($sql8);
     $like = $conn->query($sql9);
-
+    $jj = $conn->query($sql10);
 
     $sWine1 = $wine1->fetch_all(MYSQLI_ASSOC);
     $sWine2 = $wine2->fetch_all(MYSQLI_ASSOC);
@@ -35,6 +36,7 @@
     $sLaojiu2 = $laojiu2->fetch_all(MYSQLI_ASSOC);
     $sJiuju = $jiuju->fetch_all(MYSQLI_ASSOC);
     $sLike = $like->fetch_all(MYSQLI_ASSOC);
+    $sJJ = $jj->fetch_all(MYSQLI_ASSOC);
 
     $res = array(
         'wine1'=>$sWine1,
@@ -45,7 +47,8 @@
         'laojiu1'=>$sLaojiu1,
         'laojiu2'=>$sLaojiu2,
         'jiuju'=>$sJiuju,
-        'like'=>$sLike
+        'like'=>$sLike,
+        'jj'=>$sJJ
     );
 
 

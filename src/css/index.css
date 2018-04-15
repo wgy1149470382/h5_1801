@@ -349,6 +349,7 @@ body {
   height: 55px;
   background: #f4f4f0;
   height: 77px;
+  width: 185px;
 }
 
 #section .sec_r .hb ul li dd a {
@@ -379,6 +380,15 @@ body {
 
 #section .sec_r .hb ul li .sum span {
   margin-left: 5px;
+}
+
+#section .sec_r .hb ul li:hover dl {
+  margin-left: -2px;
+  margin-top: -1px;
+}
+
+#section .sec_r .hb ul li:hover dd {
+  margin-left: -2px;
 }
 
 #miao {
@@ -1593,4 +1603,25 @@ a:hover img {
 .examine .examine_r .hd h3 {
   font-size: 18px;
   line-height: 34px;
+}
+
+#backtop {
+  position: fixed;
+  right: 0;
+  bottom: 40%;
+  z-index: 1000;
+  background: #7e0001;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: none;
+}
+
+#backtop span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/nBar.png) -120px 0 no-repeat;
+  margin: 15px auto;
 }
